@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta charset="UTF-8">
+    <title>Naranja forms</title>
+    <link rel="stylesheet" href="jueves.css">
+</head>
+<body>
+    
+
+    <div class="container">
+    <form action="suc.html" method="post" onsubmit="return handle_form_submission()">
+
+        <h1>Fill in the required details correctly</h1>
+
+        
+        <fieldset class="field">
+
+        <legend>Contact Information</legend>
+                
+
+        <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="First name..." required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Last name..." required>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="gnder" id="try1" >Gender: </label> 
+            </div>
+            <div class="col-75">
+              <label id="try">Male</label>
+              <input type="radio" id="try" name="mal" required>
+              <label id="try">Female</label>
+              <input type="radio" id="try" name="mal" required>
+        </div>
+        <div class="row">
+          <div class="col-25">
+             <label for="dob" id="try1" >Date of birth: </label>
+          </div>
+          <div class="col-75">
+             <input  id="dbo" type="date" required>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="email">Email Address:</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="mail" name="email" size="25" placeholder="johndoe@email.com" required>
+            </div>
+        </div>    
+        <div class="row">
+          <div class="col-25">
+            <label for="phone no">Phone Number:</label>
+          </div>
+          <div class="col-75">
+            <input type="tel" id="phone" name="phoneno" placeholder="Phone no..." required>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="addr" id= >Home Address:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" size="40" placeholder="Home Address..."required>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="busi" id= >Work Address:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" size="40" placeholder="Work Address..."required>
+          </div>
+      </div>
+        
+         
+        </div>
+            <input  class="one" type="submit" onClick="conf()" value="Submit">
+
+    <script type="text/javascript">
+      function handle_form_submission()
+      {
+        alert('Success');
+        return false; //do not submit the form
+      } 
+    </script>
+
+
+
+
+
+
+
+
+
+
+      </fieldset>
+    </form>
+    </div>
+    </div>
